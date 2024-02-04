@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画像の中にあるQRコードを読み取るサイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="title.png" width="390">
+  <br>
+  <label for="file-input" style="cursor: pointer;">画像をアップロードする</label>
+  <input type="file" accept="image/*" id="file-input">
+  <br>
+  <div id="error-message"></div>
+  <div id="result-message" style="color: white;"></div>
+  <a id="result-link" href="#" target="_blank" style="color: white"></a>
+  <button id="copy-button">コピー</button>
+  <button id="share-button">共有</button>
+  <p>当サイトにアップロードされた画像を管理者に送信されることは一切ございませんのでご安心してご利用いただけます。</p>
+  <!--js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.0/dist/jsQR.min.js"></script>
+  <script src="script.js"></script>
+
+  </body>
+  </html>
